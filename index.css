@@ -1,0 +1,27 @@
+.header {
+	background-color: #6351ce;
+}
+
+.footer_content {
+	background-color: #23272A;
+}
+
+.footer_bottom {
+	background-color: #1A1F21;
+}
+
+body {
+	background-color: #2a2d32;
+}
+
+hr.hr_footer {
+	width: 60px;
+}
+
+a {
+	color: hsla(0, 0%, 100%, 0.6);
+}
+
+a:hover {
+	color: white;
+}
