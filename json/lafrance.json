@@ -1,0 +1,20 @@
+{
+	"lgbt" : {
+		"url" : "",
+		"value" : "1",
+		"name" : "LGBT+",
+		"counter" : "manif"
+	},
+	"manif" : {
+		"url" : "",
+		"value" : "2",
+		"name" : "La Manif pour tous",
+		"counter" : "49_3"
+	},
+	"49_3" : {
+		"url" : "",
+		"value" : "3",
+		"name" : "Article de loi 49-3",
+		"counter" : "lgbt"
+	}
+}

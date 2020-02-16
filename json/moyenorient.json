@@ -1,0 +1,20 @@
+{
+	"israel" : {
+		"url" : "",
+		"value" : "1",
+		"name" : "Israël",
+		"counter" : "palestine"
+	},
+	"palestine" : {
+		"url" : "",
+		"value" : "2",
+		"name" : "Palestine",
+		"counter" : "irak"
+	},
+	"irak" : {
+		"url" : "",
+		"value" : "3",
+		"name" : "Irak",
+		"counter" : "israel"
+	}
+}

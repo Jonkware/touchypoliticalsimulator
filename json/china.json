@@ -1,0 +1,20 @@
+{
+	"coronavirus" : {
+		"url" : "",
+		"value" : "1",
+		"name" : "Le Coronavirus",
+		"counter" : "mondialisation"
+	},
+	"liberte" : {
+		"url" : "",
+		"value" : "2",
+		"name" : "La Liberté d'expression",
+		"counter" : "coronavirus"
+	},
+	"mondialisation" : {
+		"url" : "",
+		"value" : "3",
+		"name" : "La Mondialisation",
+		"counter" : "liberte"
+	}
+}

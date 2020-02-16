@@ -1,0 +1,20 @@
+{
+	"pierre" : {
+		"url" : "",
+		"value" : "1",
+		"name" : "Pierre",
+		"counter" : "ciseaux"
+	},
+	"feuille" : {
+		"url" : "",
+		"value" : "2",
+		"name" : "Feuille",
+		"counter" : "pierre"
+	},
+	"ciseaux" : {
+		"url" : "",
+		"value" : "3",
+		"name" : "Ciseaux",
+		"counter" : "feuille"
+	}
+}

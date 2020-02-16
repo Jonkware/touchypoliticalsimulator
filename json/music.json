@@ -1,0 +1,20 @@
+{
+	"trance" : {
+		"url" : "",
+		"value" : "1",
+		"name" : "Trance",
+		"counter" : "hardteck"
+	},
+	"hardteck" : {
+		"url" : "",
+		"value" : "2",
+		"name" : "Hardteck",
+		"counter" : "frenchcore"
+	},
+	"frenchcore" : {
+		"url" : "",
+		"value" : "3",
+		"name" : "Frenchcore",
+		"counter" : "trance"
+	}
+}
