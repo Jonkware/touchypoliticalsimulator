@@ -1,18 +1,18 @@
 {
 	"israel" : {
-		"url" : "",
+		"url" : "./moyenorient/israel.png",
 		"value" : "1",
 		"name" : "Israël",
 		"counter" : "palestine"
 	},
 	"palestine" : {
-		"url" : "",
+		"url" : "./moyenorient/palestine.png",
 		"value" : "2",
 		"name" : "Palestine",
 		"counter" : "irak"
 	},
 	"irak" : {
-		"url" : "",
+		"url" : "./moyenorient/irak.png",
 		"value" : "3",
 		"name" : "Irak",
 		"counter" : "israel"
