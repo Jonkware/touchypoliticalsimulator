@@ -1,18 +1,18 @@
 {
 	"pierre" : {
-		"url" : "./standard/pierre.png",
+		"url" : "./images/standard/pierre.png",
 		"value" : "1",
 		"name" : "Pierre",
 		"counter" : "ciseaux"
 	},
 	"feuille" : {
-		"url" : "./standard/feuille.png",
+		"url" : "./images/standard/feuille.png",
 		"value" : "2",
 		"name" : "Feuille",
 		"counter" : "pierre"
 	},
 	"ciseaux" : {
-		"url" : "./standard/ciseaux.png",
+		"url" : "./images/standard/ciseaux.png",
 		"value" : "3",
 		"name" : "Ciseaux",
 		"counter" : "feuille"

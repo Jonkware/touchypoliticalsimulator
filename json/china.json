@@ -1,18 +1,18 @@
 {
 	"coronavirus" : {
-		"url" : "./china/coronavirus.png",
+		"url" : "./images/china/coronavirus.png",
 		"value" : "1",
 		"name" : "Le Coronavirus",
 		"counter" : "mondialisation"
 	},
 	"liberte" : {
-		"url" : "./china/liberte.png",
+		"url" : "./images/china/liberte.png",
 		"value" : "2",
 		"name" : "La Liberté d'expression",
 		"counter" : "coronavirus"
 	},
 	"mondialisation" : {
-		"url" : "./china/mondialisation.png",
+		"url" : "./images/china/mondialisation.png",
 		"value" : "3",
 		"name" : "La Mondialisation",
 		"counter" : "liberte"

@@ -1,18 +1,18 @@
 {
 	"kim_jong_un" : {
-		"url" : "./advanced/kim_jong_un.png",
+		"url" : "./images/advanced/kim_jong_un.png",
 		"value" : "1",
 		"name" : "King Jong Un",
 		"counter" : "donald_trump"
 	},
 	"donald_trump" : {
-		"url" : "./advanced/donald_trump.png",
+		"url" : "./images/advanced/donald_trump.png",
 		"value" : "2",
 		"name" : "Donald Trump",
 		"counter" : "poutine"
 	},
 	"poutine" : {
-		"url" : "./advanced/poutine.png",
+		"url" : "./images/advanced/poutine.png",
 		"value" : "4",
 		"name" : "Poutine",
 		"counter" : "kim_jung_un"
