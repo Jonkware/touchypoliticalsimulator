@@ -68,11 +68,14 @@ fs.readFile('./json/lafrance.json', (err, data) => {
 app.get('/', (req, res) => {
 	
   res.sendFile(__dirname + '/index.html');
-  /*res.json({"standard" : standard,
-   	"advanced" : advanced,
-  	"expert" : expert,
-  	"china" : china,
-  	"moyenorient" : moyenorient,
-  	"music" : music,
-  	"lafrance" : lafrance});*/
+  
+});
+app.get('/data', (req,res) => {
+	res.json({	"standard" : standard,
+			   	"advanced" : advanced,
+			  	"expert" : expert,
+			  	"china" : china,
+			  	"moyenorient" : moyenorient,
+			  	"music" : music,
+			  	"lafrance" : lafrance});
 });

@@ -1,4 +1,15 @@
 const standardBtn = document.getElementById('standardBtn');
+var standard;
+$(document).ready(function() {
+	$.when(
+		$(document).get("http://localhost:8080/data",function(data,status) {
+        standard = standard;
+        console.log("toto");
+      },'json'));
+});
+
+console.log(standard);
+
 standardBtn.addEventListener('click', function(e) {
   $(document).ready(function () {
             $("#choice1").text();
