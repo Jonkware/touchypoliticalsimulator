@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Don't Get Triggered</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="text-white">
 
-<div class="jumbotron text-center">
+
+<!-- Header -->
+<div class="header text-center py-5">
   <h1>Touchy Political Simulator</h1>
   <p>Careful with wine during family dinners</p>
 </div>
   
-<div class="container">
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-3">
-      <h3>Opponent Play</h3>
-      <p id = "theOppopentPlay"></p>
+
+<!-- Game -->
+<div class="container text-center py-5">
+
+  <!-- Player and Opponent Mooves -->
+  <div class="row py-5">
+
+    <div class="col-lg-6 mx-auto">
+      <h3 class="pb-4">Your Moove</h3>
+      <img id = "yourPlay" src="images/standard/feuille.png">
     </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-3">
-      <h3>Your Play</h3>
-      <p id = "yourPlay"></p>
+
+    <div class="col-lg-6 mx-auto">
+      <h3 class="pb-4">Opponent's Moove</h3>
+      <img id = "theOppopentPlay" src="images/standard/ciseaux.png">
     </div>
-    <div class="col-sm-3">
-      <h3>Choose your play</h3>        
-      <p id="choice1"></p>
-      <p id="choice2"></p>
-      <p id="choice3"></p>
+
+  </div>
+
+  <!-- Possible Mooves -->
+  <div class="container py-5">
+    <h3 class="pb-4">Choose your Moove</h3>
+    <div class="row">
+      <div class="col-lg-4 mx-auto">
+        <img id="choice1" src="images/standard/ciseaux.png">
+      </div>
+      <div class="col-lg-4 mx-auto">
+        <img id="choice2" src="images/standard/feuille.png">
+      </div>
+      <div class="col-lg-4 mx-auto">
+        <img id="choice3" src="images/standard/pierre.png">
+      </div>
     </div>
   </div>
+
 </div>
 
-<div class="jumbotron text-center">
+
+<!-- Game Modes -->
+<div class="text-center py-5">
       <h2>Other Modes</h2>
       <button id="standardBtn" class="btn btn-light">Standard</button>
       <button id="dicatorsBtn" class="btn btn-light">Dicators</button>
@@ -48,20 +69,61 @@
     </div>
 </div>
 
-<footer class="page-footer text-white bg-dark">
-  <div class="container-fluid text-center text-md-left">
-    <div class="row">
-      <div class="col-md-6 mt-md-0 mt-3 text-center">
-        <h5 class="text-uppercase font-weight-bold">Original Creators</h5>
+
+<!-- Footer -->
+<footer class="page-footer pt-5 text-white footer_content">
+  <div class="container text-center text-lg-left">
+    <div class="row mb-4">
+
+      <!-- Original Creators -->
+      <div class="col-lg-3 mx-auto">
+
+        <h6 class="text-uppercase font-weight-bold footer_title">Original Creators</h6>
+        <hr class="mt-0 d-inline-block" color="#6351ce" style="width: 60px;">
         <p>Clément Vivier</p>
         <p>Raphaël Jonquet</p>
         <p>Valentin Gasté</p>
         <p>Nicolas Pilet</p>
+
       </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-3 mx-auto">
+
+        <h6 class="text-uppercase font-weight-bold footer_title">Useful links</h6>
+        <hr class="mt-0 d-inline-block" color="#6351ce" style="width: 60px;">
+        <p>
+          <a href="https://fr.wikipedia.org/wiki/Coronavirus">Coronavirus</a>
+        </p>
+        <p>
+          <a href="https://fr.wikipedia.org/wiki/Techno">Techno Music</a>
+        </p>
+        <p>
+          <a href="#!">Fake Link</a>
+        </p>
+        <p>
+          <a href="#!">Don't trust the web</a>
+        </p>
+
+      </div>
+
+      <!-- Content Disclaimer -->
+      <div class="col-lg-4 mx-auto">
+
+        <h6 class="text-uppercase font-weight-bold">Content Disclaimer</h6>
+        <hr class="mt-0 d-inline-block" color="#6351ce" style="width: 60px;">
+        <p>This is a work of fiction. Names, characters, businesses, places, events, locales, and incidents are either the products of the author’s imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.</p>
+
+      </div>
+
     </div>
   </div>
-  <div class="footer-copyright text-center py-3">© 2020 Copyright: Deus Vult Productions</div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 footer_bottom">© 2020 Copyright: Deus Vult Productions</div>
+
 </footer>
-<script src="js/client.js"></script>
+
+
 </body>
 </html>
