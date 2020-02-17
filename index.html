@@ -27,14 +27,22 @@
   <!-- Player and Opponent Mooves -->
   <div class="row py-5">
 
-    <div class="col-lg-6 mx-auto">
+    <div class="col-lg-4 mx-auto">
+      <h3 class="pb-4">Your Score</h3>
+      <p id = "yourScore" class="h4">0</p>
       <h3 class="pb-4">Your Moove</h3>
       <img id = "yourPlay" src="./images/standard/feuille.png">
     </div>
 
-    <div class="col-lg-6 mx-auto">
+    <div class="col-lg-4 mx-auto">
+      <h3 class="pb-4">Enemy Score</h3>
+      <p id = "enemyScore" class="h4">0</p>
       <h3 class="pb-4">Opponent's Moove</h3>
       <img id = "theOppopentPlay" src="./images/standard/ciseaux.png">
+    </div>
+
+    <div class="col-lg-4 mx-auto center">
+      <img id = "timerImg" src="">
     </div>
 
   </div>
@@ -45,32 +53,36 @@
 
     
     <div class="row">
-  		<div class="col-lg-4 mx-auto">
+  		<div class="col-lg-3 mx-auto">
   			<input type="radio" name="choice" id="choice1_input" class="input-hidden"  />
   			<label for="choice1_input">
   			  <img id="choice1"	src="./images/standard/ciseaux.png" >
           <p class="h5" id = "choice1_text">Ciseaux</p>
   			</label>
   		</div>
-  		<div class="col-lg-4 mx-auto">
+  		<div class="col-lg-3 mx-auto">
   			<input type="radio" name="choice" id="choice2_input" class="input-hidden" />
   			<label for="choice2_input">
   			  <img id="choice2" src="./images/standard/feuille.png"  />
           <p class="h5" id = "choice2_text">Feuille</p>
   			</label>
   		</div>	
-  		<div class="col-lg-4 mx-auto">
+  		<div class="col-lg-3 mx-auto">
   			<input type="radio" name="choice" id="choice3_input" class="input-hidden" />
   			<label for="choice3_input">
   			  <img id="choice3" src="./images/standard/pierre.png"  />
           <p class="h5" id = "choice3_text">Pierre</p>
   			</label>
   		</div>
-      <button class="btn btn-light">I'm a test btn</button>
+      <div class="col-lg-3 mx-auto">
+        <div class="pb-4">
+          <button class="btn btn-light btn-lg" id = "confirmBtn">Confirm</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-
+  
 
 <!-- Game Modes -->
 <div class="text-center py-5">
