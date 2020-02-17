@@ -8,15 +8,16 @@ var moyenorient;
 var music;
 var lafrance;
 var type = 0;
+var whatDidIPlay = 0;
 $(document).ready(function() {
   $("#choice1_input").click( function(e) {
-    console.log("First");
+  	whatDidIPlay = 1;
   });
   $("#choice2_input").click( function(e) {
-    console.log("Second");
+  	whatDidIPlay = 2;
   });
   $("#choice3_input").click( function(e) {
-    console.log("Third");
+  	whatDidIPlay = 3;
   });
     $.when(
       $.get("http://localhost:8080/data",function(data,status) {
@@ -146,6 +147,7 @@ musicBtn.addEventListener('click', function(e) {
 });
 
 function uncheckButtonRadio() {
+	whatDidIPlay = 0;
 	$(document).ready(function () {
 		$("#choice3_input").prop("checked", false);
 		$("#choice2_input").prop("checked", false);
@@ -153,14 +155,89 @@ function uncheckButtonRadio() {
 	});
 }
 
+
+function makeThePlay(indice) {
+	switch (type) {
+		case 0 :
+		if (indice == 1) {
+			return standard.pierre.url;
+		} else if (indice ==2) {
+			return standard.feuille.url;
+		} else {
+			return standard.ciseaux.url;
+		}
+		break;
+		case 1 :
+		if (indice == 1) {
+			return advanced.kim_jong_un.url;
+		} else if (indice ==2) {
+			return advanced.donald_trump.url;
+		} else {
+			return advanced.poutine.url;
+		}
+		break;
+		case 2 :
+		if (indice == 1) {
+			return china.coronavirus.url;
+		} else if (indice ==2) {
+			return china.liberte.url;
+		} else {
+			return china.mondialisation.url;
+		}
+		break;
+		case 3 :
+		if (indice == 1) {
+			return lafrance.lgbt.url;
+		} else if (indice ==2) {
+			return lafrance.manif.url;
+		} else {
+			return lafrance.loi49_3.url;
+		}
+		break;
+		case 4 :
+		if (indice == 1) {
+			return expert.chirac.url;
+		} else if (indice ==2) {
+			return expert.macron.url;
+		} else {
+			return expert.hollande.url;
+		}
+		break;
+		case 5 :
+		if (indice == 1) {
+			return moyenorient.israel.url;
+		} else if (indice ==2) {
+			return moyenorient.palestine.url;
+		} else {
+			return moyenorient.irak.url;
+		}
+		break;
+		case 6 :
+		if (indice == 1) {
+			return music.trance.url;
+		} else if (indice ==2) {
+			return music.hardtek.url;
+		} else {
+			return music.frenchcore.url;
+		}
+		break;
+	}
+}
+
+var isPlayable = true;
+
 const confirmBtn = document.getElementById('confirmBtn');
 confirmBtn.addEventListener('click', function(e) {
-	uncheckButtonRadio();
+	
 
-	setTimeout(changeImage3,0);
-	setTimeout(changeImage2,1000);
-	setTimeout(changeImage1,2000);
-	setTimeout(resetImage,3000);
+	if (isPlayable) {
+		isPlayable = false;
+		setTimeout(changeImage3,0);
+		setTimeout(changeImage2,1000);
+		setTimeout(changeImage1,2000);
+		setTimeout(resetImage,3000);
+	}
+	
 
 	function changeImage3() {
 	  	$(document).ready(function () {
@@ -178,15 +255,16 @@ confirmBtn.addEventListener('click', function(e) {
   		});
 	}
 	function resetImage() {
+		isPlayable = true;
 	  	$(document).ready(function () {
 	  		var rand = Math.floor((Math.random() * 3) + 1);
-	  		console.log(type);
-
-	  		if (rand == 3) {
-
-	  		}
+	  		$("#theOppopentPlay").attr("src",makeThePlay(rand));
+	  		$("#yourPlay").attr("src",makeThePlay(whatDidIPlay));
+	  		
 	  		$("#timerImg").attr("src","");
+	  		uncheckButtonRadio();
   		});
+  		
 	}
 });
 
