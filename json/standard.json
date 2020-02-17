@@ -1,17 +1,20 @@
 {
 	"pierre" : {
+		"checkName": "pierre",
 		"url" : "./images/standard/pierre.png",
 		"value" : "1",
 		"name" : "Pierre",
 		"counter" : "ciseaux"
 	},
 	"feuille" : {
+		"checkName": "feuille",
 		"url" : "./images/standard/feuille.png",
 		"value" : "2",
 		"name" : "Feuille",
 		"counter" : "pierre"
 	},
 	"ciseaux" : {
+		"checkName": "ciseaux",
 		"url" : "./images/standard/ciseaux.png",
 		"value" : "3",
 		"name" : "Ciseaux",

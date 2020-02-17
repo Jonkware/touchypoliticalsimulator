@@ -1,17 +1,20 @@
 {
 	"trance" : {
+		"checkName": "trance",
 		"url" : "./images/music/trance.png",
 		"value" : "1",
 		"name" : "Trance",
 		"counter" : "hardteck"
 	},
 	"hardtek" : {
+		"checkName": "hardtek",
 		"url" : "./images/music/hardtek.png",
 		"value" : "2",
 		"name" : "Hardtek",
 		"counter" : "frenchcore"
 	},
 	"frenchcore" : {
+		"checkName": "frenchcore",
 		"url" : "./images/music/frenchcore.png",
 		"value" : "3",
 		"name" : "Frenchcore",

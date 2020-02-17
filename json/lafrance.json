@@ -1,17 +1,20 @@
 {
 	"lgbt" : {
+		"checkName": "lgbt",
 		"url" : "./images/lafrance/lgbt.png",
 		"value" : "1",
 		"name" : "LGBT+",
 		"counter" : "manif"
 	},
 	"manif" : {
+		"checkName": "manif",
 		"url" : "./images/lafrance/manif.png",
 		"value" : "2",
 		"name" : "La Manif pour tous",
 		"counter" : "loi49_3"
 	},
 	"loi49_3" : {
+		"checkName": "loi49_3",
 		"url" : "./images/lafrance/loi49_3.png",
 		"value" : "3",
 		"name" : "Article de loi 49-3",

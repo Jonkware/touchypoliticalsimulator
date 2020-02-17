@@ -1,17 +1,20 @@
 {
 	"chirac" : {
+		"checkName": "chirac",
 		"url" : "./images/expert/chirac.png",
 		"value" : "1",
 		"name" : "M. Le Président de tous les français aka Chirac",
 		"counter" : "macron"
 	},
 	"macron" : {
+		"checkName": "macron",
 		"url" : "./images/expert/macron.png",
 		"value" : "2",
 		"name" : "Emmanuel Macron",
 		"counter" : "hollande"
 	},
 	"hollande" : {
+		"checkName": "hollande",
 		"url" : "./images/expert/hollande.png",
 		"value" : "3",
 		"name" : "François Hollande",

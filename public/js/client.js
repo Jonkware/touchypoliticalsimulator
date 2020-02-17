@@ -46,7 +46,6 @@ standardBtn.addEventListener('click', function(e) {
     $("#yourPlay").text("Pas encore voté");
     $("#theOppopentPlay").text("Pas encore voté");
     uncheckButtonRadio();
-    console.log("toto");
   });
 });
 
@@ -155,74 +154,197 @@ function uncheckButtonRadio() {
 	});
 }
 
-
-function makeThePlay(indice) {
-	switch (type) {
+var yourPlayJson;
+var ennemyPlayJson;
+function makeThePlay(indice,isThatEnemy) {
+	if (isThatEnemy) {
+		switch (type) {
 		case 0 :
 		if (indice == 1) {
+			ennemyPlayJson = standard.pierre;
 			return standard.pierre.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = standard.feuille;
 			return standard.feuille.url;
 		} else {
+			ennemyPlayJson = standard.ciseaux;
 			return standard.ciseaux.url;
 		}
 		break;
 		case 1 :
 		if (indice == 1) {
+			ennemyPlayJson = advanced.kim_jong_un;
 			return advanced.kim_jong_un.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = advanced.donald_trump;
 			return advanced.donald_trump.url;
 		} else {
+			ennemyPlayJson = advanced.poutine;
 			return advanced.poutine.url;
 		}
 		break;
 		case 2 :
 		if (indice == 1) {
+			ennemyPlayJson = china.coronavirus;
 			return china.coronavirus.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = china.liberte;
 			return china.liberte.url;
 		} else {
+			ennemyPlayJson = china.mondialisation;
 			return china.mondialisation.url;
 		}
 		break;
 		case 3 :
 		if (indice == 1) {
+			ennemyPlayJson = lafrance.lgbt;
 			return lafrance.lgbt.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = lafrance.manif;
 			return lafrance.manif.url;
 		} else {
+			ennemyPlayJson = lafrance.loi49_3;
 			return lafrance.loi49_3.url;
 		}
 		break;
 		case 4 :
 		if (indice == 1) {
+			ennemyPlayJson = expert.chirac;
 			return expert.chirac.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = expert.macron;
 			return expert.macron.url;
 		} else {
+			ennemyPlayJson = expert.hollande;
 			return expert.hollande.url;
 		}
 		break;
 		case 5 :
 		if (indice == 1) {
+			ennemyPlayJson = moyenorient.israel;
 			return moyenorient.israel.url;
 		} else if (indice ==2) {
+			ennemyPlayJson = moyenorient.palestine;
 			return moyenorient.palestine.url;
 		} else {
+			ennemyPlayJson = moyenorient.irak;
 			return moyenorient.irak.url;
 		}
 		break;
 		case 6 :
 		if (indice == 1) {
+			yourPlayJson = music.trance;
 			return music.trance.url;
 		} else if (indice ==2) {
+			yourPlayJson = music.hardtek;
 			return music.hardtek.url;
 		} else {
+			yourPlayJson = music.frenchcore;
 			return music.frenchcore.url;
 		}
 		break;
+		}
+	} else {
+		switch (type) {
+		case 0 :
+		if (indice == 1) {
+			yourPlayJson = standard.pierre;
+			return standard.pierre.url;
+		} else if (indice ==2) {
+			yourPlayJson = standard.feuille;
+			return standard.feuille.url;
+		} else {
+			yourPlayJson = standard.ciseaux;
+			return standard.ciseaux.url;
+		}
+		break;
+		case 1 :
+		if (indice == 1) {
+			yourPlayJson = advanced.kim_jong_un;
+			return advanced.kim_jong_un.url;
+		} else if (indice ==2) {
+			yourPlayJson = advanced.donald_trump;
+			return advanced.donald_trump.url;
+		} else {
+			yourPlayJson = advanced.poutine;
+			return advanced.poutine.url;
+		}
+		break;
+		case 2 :
+		if (indice == 1) {
+			yourPlayJson = china.coronavirus;
+			return china.coronavirus.url;
+		} else if (indice ==2) {
+			yourPlayJson = china.liberte;
+			return china.liberte.url;
+		} else {
+			yourPlayJson = china.mondialisation;
+			return china.mondialisation.url;
+		}
+		break;
+		case 3 :
+		if (indice == 1) {
+			yourPlayJson = lafrance.lgbt;
+			return lafrance.lgbt.url;
+		} else if (indice ==2) {
+			yourPlayJson = lafrance.manif;
+			return lafrance.manif.url;
+		} else {
+			yourPlayJson = lafrance.loi49_3;
+			return lafrance.loi49_3.url;
+		}
+		break;
+		case 4 :
+		if (indice == 1) {
+			yourPlayJson = expert.chirac;
+			return expert.chirac.url;
+		} else if (indice ==2) {
+			yourPlayJson = expert.macron;
+			return expert.macron.url;
+		} else {
+			yourPlayJson = expert.hollande;
+			return expert.hollande.url;
+		}
+		break;
+		case 5 :
+		if (indice == 1) {
+			yourPlayJson = moyenorient.israel;
+			return moyenorient.israel.url;
+		} else if (indice ==2) {
+			yourPlayJson = moyenorient.palestine;
+			return moyenorient.palestine.url;
+		} else {
+			yourPlayJson = moyenorient.irak;
+			return moyenorient.irak.url;
+		}
+		break;
+		case 6 :
+		if (indice == 1) {
+			yourPlayJson = music.trance;
+			return music.trance.url;
+		} else if (indice ==2) {
+			yourPlayJson = music.hardtek;
+			return music.hardtek.url;
+		} else {
+			yourPlayJson = music.frenchcore;
+			return music.frenchcore.url;
+		}
+		break;
+		}
+	}
+	
+}
+
+function whoWinThisRound() {
+	if (yourPlayJson.checkName == ennemyPlayJson.counter) {
+		return 1;
+	} else if (yourPlayJson.counter == ennemyPlayJson.checkName) {
+		return 0;
+	} else {
+		return -1;
 	}
 }
+
 
 var isPlayable = true;
 
@@ -231,6 +353,7 @@ confirmBtn.addEventListener('click', function(e) {
 	
 
 	if (isPlayable) {
+		$("#resultText").text("");
 		isPlayable = false;
 		setTimeout(changeImage3,0);
 		setTimeout(changeImage2,1000);
@@ -258,10 +381,23 @@ confirmBtn.addEventListener('click', function(e) {
 		isPlayable = true;
 	  	$(document).ready(function () {
 	  		var rand = Math.floor((Math.random() * 3) + 1);
-	  		$("#theOppopentPlay").attr("src",makeThePlay(rand));
-	  		$("#yourPlay").attr("src",makeThePlay(whatDidIPlay));
-	  		
+	  		$("#theOppopentPlay").attr("src",makeThePlay(rand,true));
+	  		$("#yourPlay").attr("src",makeThePlay(whatDidIPlay,false));
 	  		$("#timerImg").attr("src","");
+	  		var result = whoWinThisRound();
+	  		var yourCurrentScore = parseInt($("#yourScore").text(),10);
+  			console.log(result);
+  			var enemyCurrentScore = parseInt($("#enemyScore").text(),10);
+	  		if (result > 0) {
+	  			yourCurrentScore++;
+	  			resultText
+	  			$("#resultText").text("You Win !");
+	  			$("#yourScore").text(yourCurrentScore);
+	  		} else if (result == 0) {
+	  			enemyCurrentScore++;
+	  			$("#resultText").text("You Lose !");
+	  			$("#enemyScore").text(enemyCurrentScore);
+	  		}
 	  		uncheckButtonRadio();
   		});
   		
