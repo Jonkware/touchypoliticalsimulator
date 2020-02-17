@@ -9,10 +9,10 @@
 		"url" : "./images/lafrance/manif.png",
 		"value" : "2",
 		"name" : "La Manif pour tous",
-		"counter" : "49_3"
+		"counter" : "loi49_3"
 	},
-	"49_3" : {
-		"url" : "./images/lafrance/49_3.png",
+	"loi49_3" : {
+		"url" : "./images/lafrance/loi49_3.png",
 		"value" : "3",
 		"name" : "Article de loi 49-3",
 		"counter" : "lgbt"
