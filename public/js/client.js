@@ -386,7 +386,6 @@ confirmBtn.addEventListener('click', function(e) {
 	  		$("#timerImg").attr("src","");
 	  		var result = whoWinThisRound();
 	  		var yourCurrentScore = parseInt($("#yourScore").text(),10);
-  			console.log(result);
   			var enemyCurrentScore = parseInt($("#enemyScore").text(),10);
 	  		if (result > 0) {
 	  			yourCurrentScore++;
