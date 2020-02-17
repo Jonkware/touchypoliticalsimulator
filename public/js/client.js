@@ -56,9 +56,9 @@ dicatorsBtn.addEventListener('click', function(e) {
     $("#choice1").attr("src", advanced.kim_jong_un.url);
     $("#choice2").attr("src", advanced.donald_trump.url);
     $("#choice3").attr("src", advanced.poutine.url);
-    $("#choice1_text").text(standard.pierre.name);
-    $("#choice2_text").text(standard.feuille.name);
-    $("#choice3_text").text(standard.ciseaux.name);
+    $("#choice1_text").text(advanced.kim_jong_un.name);
+    $("#choice2_text").text(advanced.donald_trump.name);
+    $("#choice3_text").text(advanced.poutine.name);
     $("#yourPlay").text("Pas encore voté");
     $("#theOppopentPlay").text("Pas encore voté");
     uncheckButtonRadio();
